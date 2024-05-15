@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { ModeToggle } from '@/components/ModeToggle';
-import { Head } from '@/components/Head';
 import { Hero } from '@/components/Hero'
  
 
