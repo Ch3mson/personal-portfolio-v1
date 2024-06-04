@@ -17,10 +17,6 @@ module.exports = {
       },
     },
     extend: {
-      width: {
-        '1216': '1216px', // Key is the class suffix, value is the CSS width
-        '1024': '1024px'
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

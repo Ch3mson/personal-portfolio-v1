@@ -1,17 +1,15 @@
 import { ModeToggle } from '@/components/ModeToggle';
 import { Hero } from '@/components/Hero'
- 
+import { About } from '@/components/About'
+import { CardChange } from '@/components/CardChange'
+import { CardSection } from '@/components/CardSection'
 
 export default function Home() {
   return (
     <>
-
-    <div className="w-1/2 max-w-full mx-auto px-5 box-border bg-[#18181b]">
-      <ModeToggle />
       <Hero />
-
-    </div>
-    
+      <About />
+      <CardSection />
     </>
   );
 }

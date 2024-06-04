@@ -1,41 +1,50 @@
 import Image from 'next/image';
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
-    return (
-      <div className="container mx-auto max-w-4xl px-2 flex items-start justify-between"> {/* Changed items-center to items-start */}
-
-        <div className="max-w-lg space-y-7">
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            I am Benson Yan. I live in Vancouver and study at Waterloo.
-          </h1>
-        <div>
-          
+  return (
+    <>
+      {/* Hero */}
+      <div className="relative overflow-hidden py-24 lg:py-32">
+        {/* Gradients */}
+        <div
+          aria-hidden="true"
+          className="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
+        >
+          <div className="bg-gradient-to-r from-background/50 to-background blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem]" />
+          <div className="bg-gradient-to-tl blur-3xl w-[90rem] h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] from-primary-foreground via-primary-foreground to-background" />
         </div>
-          <p className="text-[#97979f]">Hi!, I am Benson Yan, a Computer Science student at the University of Waterloo</p>
-          <p className="text-[#97979f]">I am currently on my co-op term where I am working at Cornerstone Realty Marketing in Markham. I am also taking Intro to Optimization (CO250) as an additional courseload.</p>
-          <p className="text-[#97979f]">
-            My whole life, I have been an avid learner. I am heavily intrigued in various areas of computer science, as I have created projects on Full-stack Development, Data Science, and Machine Learning. 
-            Most notably, I utilized Pandas and numPy to manipulate a dataset of 9000 high elo League of Legend games to determine what maximizes the chances to win a game.
-          </p>
-          <p className="text-[#97979f]">Outside of studying, you will find me playing badminton, eating, and sleeping.</p>
-          <p className="text-[#97979f]">Below are some of my work:</p>
+        {/* End Gradients */}
+        <div className="relative z-10">
+          <div className="container py-10 lg:py-16">
+            <div className="max-w-2xl text-center mx-auto">
+              <p className=""></p>
+              {/* Title */}
+              <div className="mt-5 max-w-2xl">
+                <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                  Hi! I'm Benson Yan
+                </h1>
+              </div>
+              {/* End Title */}
+              <div className="mt-5 max-w-3xl">
+                <p className="text-xl text-muted-foreground">
+                  Welcome to my personal portflio! 
+                </p>
+              </div>
+              {/* Buttons */}
+              <div className="mt-8 gap-3 flex justify-center">
+                <Button size={"lg"}>Get started</Button>
+                <Button size={"lg"} variant={"outline"}>
+                  Learn more
+                </Button>
+              </div>
+              {/* End Buttons */}
+            </div>
+          </div>
         </div>
-
-
-      <div className="space-y-4">
-        <Image 
-            src="/profilepic.jpg"
-            alt="Benson Yan"
-            width={500} // Specify the width
-            height={600} // And the height
-            layout="responsive" // This makes the image scale with the container
-        />
-        <a href="#" className="block text-center text-white">Follow on Xvideos</a>
-        <a href="#" className="block text-center text-white">Follow on Instagram</a>
-        <a href="#" className="block text-center text-white">Follow on GitHub</a>
-        <a href="#" className="block text-center text-white">Follow on LinkedIn</a>
       </div>
-    </div> 
-    )
+      {/* End Hero */}
+    </>
+  );
   }
   
