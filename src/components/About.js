@@ -14,6 +14,14 @@ export function About() {
                 </p>
                 
             </div>
+
+            <div class="container mx-auto w-3/5 p-4">
+                <div className="grid items-center grid-cols-2 gap-4 relative overflow-hidden py-24 lg:py-32 lg:grid-cols-2 grid-cols-1">
+                    <div className="text-center">THIS IS ITEM 1</div>
+                    <div className="text-center">THIS IS ITEM 2</div>
+                </div>
+            </div>
+    
         </>
     );
 }
