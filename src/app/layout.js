@@ -1,8 +1,31 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localfont from "next/font/local"
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const gothamBook = localfont({
+  src: [
+    {
+      path: "../../public/fonts/GothamBook.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-gotham-book",
+});
+
+const gothamBold = localfont({
+  src: [
+    {
+      path: "../../public/fonts/GothamBold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-gotham-bold",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${gothamBook.variable} ${gothamBold.variable}`} suppressHydrationWarning>
       <head />
       <body>
         <ThemeProvider
