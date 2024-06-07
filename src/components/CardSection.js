@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/Card'; // Adjust import paths accordingly
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
 export function CardSection() {
   const cardData = [
@@ -19,6 +19,13 @@ export function CardSection() {
 
   return (
     <div className="relative overflow-hidden py-24 lg:py-32 flex flex-wrap justify-center items-stretch gap-4">
+      
+      <div className="relative overflow-hidden py-24 lg:py-32 flex flex-wrap justify-center items-stretch gap-4 flex-col">
+        <h1 className="text-7xl">Fullstack.</h1>
+        <h1 className="text-7xl">ML.</h1>
+      </div>
+
+
       {cardData.map((card, index) => (
         <a 
           key={index} 
@@ -42,6 +49,8 @@ export function CardSection() {
           </Card>
         </a>
       ))}
+
+
     </div>
   );
 }
