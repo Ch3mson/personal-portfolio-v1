@@ -2,7 +2,7 @@
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 
-const headingClass = "text-7xl font-extrabold inline-block transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#CF878E]";
+const headingClass = "text-7xl font-extrabold inline-block";
 
 export function Hero() {
   return (
