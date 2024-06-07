@@ -11,11 +11,11 @@ export function About() {
           </p>
           <p className="leading-7 mt-6 text-xl text-justify">
             I have been coding since grade 10, starting off with HTML/CSS and learning Java in grade 11/12. In university,
-            I have branched off to learning C, Python, and Javascript.
+            I have branched off to learning C, Python, and Javascript. Above is the link to my resume if you are interested in learning more about me.
+            Below are some of my notable projects that showcase my ability as a full-stack web developer, data scientist, and machine learning engineer.
           </p>
           <p className="leading-7 mt-6 text-xl text-justify">
-            Above is the link to my resume if you are interested in learning more about me.
-            Below are some of my notable projects that showcase my ability as a full-stack web developer, data scientist, and machine learning engineer.
+            On my spare time, you will see me playing League of Legend, sleeping, or eating.
           </p>
         </div>
       </div>
