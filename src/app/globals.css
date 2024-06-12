@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --font-sans: var(--font-gotham-book);
   --font-bold: var(--font-gotham-bold);
