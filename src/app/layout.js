@@ -5,26 +5,26 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const gothamBook = localfont({
+const poppinsRegular = localfont({
   src: [
     {
-      path: "../../public/fonts/gotham-book.woff2",
+      path: "../../public/fonts/Poppins-Regular.ttf",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-gotham-book",
+  variable: "--font-poppins-regular",
 });
 
-const gothamBold = localfont({
+const poppinsBold = localfont({
   src: [ 
     {
-      path: "../../public/fonts/gotham-book.woff2",
+      path: "../../public/fonts/Poppins-Bold.ttf",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-gotham-bold",
+  variable: "--font-poppins-bold",
 });
 
 export const metadata = {
@@ -34,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${gothamBook.variable} ${gothamBold.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${poppinsRegular.variable} ${poppinsBold.variable}`} suppressHydrationWarning>
       <head />
       <body>
         <ThemeProvider

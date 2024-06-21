@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: var(--font-gotham-book);
-  --font-bold: var(--font-gotham-bold);
+  --font-sans: 'Poppins', sans-serif;
+  --font-bold: 'Poppins', sans-serif; /* Poppins uses the same family for bold */
 }
 
 body {

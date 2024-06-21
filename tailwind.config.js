@@ -48,7 +48,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        gotham: ["var(--font-gotham)"],
+        sans: ['Poppins', 'sans-serif'],
+        bold: ['Poppins', 'sans-serif'],
       },
     },
   },
