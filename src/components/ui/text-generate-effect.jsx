@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 export const TextGenerateEffect = ({ words, className }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
-  const headingClass = "text-7xl font-extrabold inline-block";
+  const headingClass = "inline-block";
 
   useEffect(() => {
     async function sequence() {
@@ -36,7 +36,7 @@ export const TextGenerateEffect = ({ words, className }) => {
         {wordsArray.map((word, idx) => (
           <motion.span
             key={word + idx}
-            className="dark:text-white text-black opacity-0"
+            className="dark:text-white opacity-0"
           >
             {word}{" "}
           </motion.span>
@@ -46,9 +46,9 @@ export const TextGenerateEffect = ({ words, className }) => {
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn(className)}>
       <div className="mt-4">
-        <div className={`${headingClass} dark:text-white text-black text-2xl leading-snug tracking-wide`}>
+        <div className={`${headingClass} dark:text-white leading-snug tracking-wide`}>
           {renderWords()}
         </div>
       </div>
