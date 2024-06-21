@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
 :root {
   --font-sans: 'Poppins', sans-serif;
-  --font-bold: 'Poppins', sans-serif; /* Poppins uses the same family for bold */
+  --font-bold: 'Poppins', sans-serif;
 }
 
 body {

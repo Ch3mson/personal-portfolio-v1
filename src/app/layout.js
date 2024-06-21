@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import localfont from "next/font/local"
+import localfont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +17,7 @@ const poppinsRegular = localfont({
 });
 
 const poppinsBold = localfont({
-  src: [ 
+  src: [
     {
       path: "../../public/fonts/Poppins-Bold.ttf",
       weight: "700",
@@ -34,7 +34,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppinsRegular.variable} ${poppinsBold.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${poppinsRegular.variable} ${poppinsBold.variable}`}
+      suppressHydrationWarning
+    >
       <head />
       <body>
         <ThemeProvider
