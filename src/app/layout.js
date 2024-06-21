@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 const gothamBook = localfont({
   src: [
     {
-      path: "../../public/fonts/GothamBook.ttf",
+      path: "../../public/fonts/gotham-book.woff2",
       weight: "400",
       style: "normal",
     },
@@ -17,9 +17,9 @@ const gothamBook = localfont({
 });
 
 const gothamBold = localfont({
-  src: [
+  src: [ 
     {
-      path: "../../public/fonts/GothamBold.ttf",
+      path: "../../public/fonts/gotham-book.woff2",
       weight: "700",
       style: "normal",
     },
