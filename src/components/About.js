@@ -1,4 +1,4 @@
-const headingClass = "text-7xl font-extrabold inline-block";
+const headingClass = "text-7xl inline-block";
 
 export function About() {
     return (
