@@ -21,7 +21,7 @@ export function CardSection() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h1 className={`pb-18 lg:py-20 text-7xl`}>Projects.</h1>
+      <h1 className={`pb-18 py-20 text-7xl`}>Projects.</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-16 lg:gap-y-0">
         
         <div className="col-span-1 lg:col-span-1 flex flex-col gap-16 max-w-full">
