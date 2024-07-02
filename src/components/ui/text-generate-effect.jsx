@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 export const TextGenerateEffect = ({ words, className }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
-  const headingClass = "inline-block lg:text-7xl md:text-5xl font-bold"; // Updated for responsive styles
+  const headingClass = "inline-block text-7xl font-bold"; // Updated for responsive styles
 
   useEffect(() => {
     async function sequence() {

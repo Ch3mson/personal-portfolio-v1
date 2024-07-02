@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
-const headingClass = "text-7xl font-extrabold inline-block transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#CF878E]";
+const headingClass = "text-7xl font-medium inline-block transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#CF878E]";
 
 export function CardSection() {
   const cardData = [
@@ -20,7 +20,7 @@ export function CardSection() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
       <h1 className={`pb-18 py-20 text-7xl`}>Projects.</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-16 lg:gap-y-0">
         
