@@ -5,12 +5,13 @@ const headingClass = "text-7xl inline-block";
 
 export function About() {
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex items-center justify-start mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen"
-        >
-            <div className="py-24 max-w-7xl lg:py-32">
+        <div className="flex items-center justify-start mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{opacity: 1}}
+                transition={{ duration: 2 }}
+                className="py-24 max-w-7xl lg:py-32"
+            >
                 <h1 className={headingClass}>About.</h1>
                 <p className="leading-7 mt-6 text-xl text-justify">
                     Hi! My name is Benson Yan and I am a student at The University of Waterloo, studying computer science with a specialization in Artificial Intelligence.
@@ -21,7 +22,7 @@ export function About() {
                 <p className="leading-7 mt-6 text-xl text-justify">
                     In my spare time, you will find me playing League of Legends, sleeping, or eating.
                 </p>
-            </div>
-        </motion.div>
+            </motion.div>
+        </div>
     );
 }
