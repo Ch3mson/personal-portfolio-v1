@@ -1,17 +1,30 @@
 'use client'
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 const headingClass = "text-7xl inline-block";
 
 export function About() {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        amount: 0.5
+    });
+
+    useEffect(() => {
+        console.log(`The element ${isInView ? "is" : "is NOT"} in view`)
+    }, [isInView])
+
+
     return (
-        <div className="flex items-center justify-start mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
-            <motion.div 
-                initial={{ opacity: 0 }}
-                whileInView={{opacity: 1}}
-                transition={{ duration: 2 }}
-                className="py-24 max-w-7xl lg:py-32"
-            >
+        <motion.div 
+            className="flex items-center justify-start mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen"
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="py-24 max-w-7xl lg:py-32">
                 <h1 className={headingClass}>About.</h1>
                 <p className="leading-7 mt-6 text-xl text-justify">
                     Hi! My name is Benson Yan and I am a student at The University of Waterloo, studying computer science with a specialization in Artificial Intelligence.
@@ -22,7 +35,7 @@ export function About() {
                 <p className="leading-7 mt-6 text-xl text-justify">
                     In my spare time, you will find me playing League of Legends, sleeping, or eating.
                 </p>
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
     );
 }
