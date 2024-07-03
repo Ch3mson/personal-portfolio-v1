@@ -11,10 +11,10 @@ export function Navbar() {
       <a href="/">
         <Image href="/" src={head} alt="Logo" width={50} height={50} />
       </a>
-        <a href="#home" className={`text-lg font-medium text-gray-800 hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Home</a>
-        <a href="#about" className={`text-lg font-medium text-gray-800 hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>About</a>
-        <a href="#projects" className={`text-lg font-medium text-gray-800 hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Projects</a>
-        <a href="#contact" className={`text-lg font-medium text-gray-800 hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Contact</a>
+        <a href="#home" className={`text-lg font-medium hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Home</a>
+        <a href="#about" className={`text-lg font-medium hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>About</a>
+        <a href="#projects" className={`text-lg font-medium hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Projects</a>
+        <a href="#contact" className={`text-lg font-medium hover:text-[#B0D6D3]`} style={{ transform: 'rotate(-90deg)' }}>Contact</a>
       </div>
     </nav>
   );
