@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
-const headingClass = "text-7xl inline-block";
 
 export function About() {
 
@@ -24,8 +23,8 @@ export function About() {
             animate={{ opacity: isInView ? 1 : 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="py-24 max-w-7xl lg:py-32">
-                <h1 className={headingClass}>About.</h1>
+            <div className="py-24 max-w-7xl py-32">
+                <h1 className={`text-7xl inline-block`}>About.</h1>
                 <p className="leading-7 mt-6 text-xl text-justify">
                     Hi! My name is Benson Yan and I am a student at The University of Waterloo, studying computer science with a specialization in Artificial Intelligence.
                 </p>
