@@ -50,7 +50,7 @@ export const TextGenerateEffect = ({ words, className }) => {
         <div className={`inline-block 
                         2xl:text-7xl xl:text-5xl lg:text-3xl md:text-xl sm:text-sm
                         2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm
-                        font-semibold dark:text-white leading-snug tracking-wide`}>
+                        font-semibold dark:text-white text-black leading-snug tracking-wide`}>
           {renderWords()}
         </div>
       </div>

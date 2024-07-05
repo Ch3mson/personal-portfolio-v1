@@ -28,3 +28,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bold);
 }
+
+.hover-underline-animation {
+  @apply inline-block relative;
+}
+
+.hover-underline-animation::after {
+  @apply dark:bg-[#CF878E] bg-[#B0D6D3] content-[''] absolute w-full scale-x-0 h-[2px] bottom-0 left-0 origin-left transition-all ease-in-out;
+}
+
+.hover-underline-animation:hover::after {
+  @apply scale-x-100;
+}
+
+.hover-underline-animation-pink {
+  @apply inline-block relative;
+}
+
+/* yuh ^ https://handinugroho.com/blog/underline-animation-css */
+
