@@ -7,6 +7,7 @@ import { CardSection } from '@/components/CardSection'
 export default function Home() {
   return (
     <>
+      <title>Benson Yan Portfolio</title>
       <ModeToggle />
       <Navbar />
       <Hero />

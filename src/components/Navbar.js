@@ -14,10 +14,10 @@ export function Navbar() {
       <a href="/">
         <Image href="/" src={head} alt="Logo" width={50} height={50} />
       </a>
-        <a href="#home" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Home</a>
-        <a href="#about" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>About</a>
-        <a href="#projects" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Projects</a>
-        <a href="#contact" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Contact</a>
+        <a href="#home" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>About</a>
+        <a href="#about" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Projects</a>
+        <a href="#about" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Experience</a>
+        <a href="#projects" className={textStyle} style={{ transform: 'rotate(-90deg)' }}>Resume</a>
       </div>
     </nav>
   );
