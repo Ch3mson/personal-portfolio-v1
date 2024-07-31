@@ -23,42 +23,45 @@ export function CardSection() {
   
 
   return (
-    <motion.div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
-      <h1 className={`pb-18 py-20 text-7xl`}>Projects.</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-16 lg:gap-y-0">
+    // <motion.div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
+    //   <h1 className={`pb-18 py-20 text-7xl`}>Projects.</h1>
+    //   <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-16 lg:gap-y-0">
         
-        <div className="col-span-1 lg:col-span-1 flex flex-col gap-16 max-w-full">
-          <a href="#All" className={headingClass}>All.</a>
-          <a href="#fullstack" className={headingClass}>Fullstack.</a>
-          <a href="#ml" className={headingClass}>ML.</a>
-        </div>
+    //     <div className="col-span-1 lg:col-span-1 flex flex-col gap-16 max-w-full">
+    //       <a href="#All" className={headingClass}>All.</a>
+    //       <a href="#fullstack" className={headingClass}>Fullstack.</a>
+    //       <a href="#ml" className={headingClass}>ML.</a>
+    //     </div>
 
-        <div className="col-span-1 lg:col-span-2 space-y-10">
-          {cardData.map((card, index) => (
-            <a 
-              key={index} 
-              href={card.url} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transform transition-transform duration-300 hover:scale-105 flex"
-            >
-              <Card className="w-full flex flex-col">
-                <CardHeader className="flex-none">
-                  <CardTitle>{card.title}</CardTitle>
-                  <CardDescription>{card.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow overflow-auto">
-                  <div className="flex flex-col space-y-1.5">
-                    <p className="leading-7">
-                      {card.content}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </a>
-          ))}
-        </div>
-      </div>
-    </motion.div>
+    //     <div className="col-span-1 lg:col-span-2 space-y-10">
+    //       {cardData.map((card, index) => (
+    //         <a 
+    //           key={index} 
+    //           href={card.url} 
+    //           target="_blank" 
+    //           rel="noopener noreferrer"
+    //           className="transform transition-transform duration-300 hover:scale-105 flex"
+    //         >
+    //           <Card className="w-full flex flex-col">
+    //             <CardHeader className="flex-none">
+    //               <CardTitle>{card.title}</CardTitle>
+    //               <CardDescription>{card.description}</CardDescription>
+    //             </CardHeader>
+    //             <CardContent className="flex-grow overflow-auto">
+    //               <div className="flex flex-col space-y-1.5">
+    //                 <p className="leading-7">
+    //                   {card.content}
+    //                 </p>
+    //               </div>
+    //             </CardContent>
+    //           </Card>
+    //         </a>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </motion.div>
+    
+    <>
+    </>
   );
 }

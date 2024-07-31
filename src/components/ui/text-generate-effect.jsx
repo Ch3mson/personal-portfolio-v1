@@ -13,8 +13,11 @@ export const TextGenerateEffect = ({ words, className }) => {
       await animate(
         "span",
         { opacity: 1 },
-        { duration: 1, delay: stagger(0.2) }
+        { duration: 1, delay: stagger(0.15) }
       );
+
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Added a 2-second pause
+      
       // Fade out words one by one in reverse order
       await animate(
         "span",
@@ -24,7 +27,7 @@ export const TextGenerateEffect = ({ words, className }) => {
     }
 
     sequence();
-    const interval = setInterval(sequence, (wordsArray.length * 0.2 * 2 + 2) * 1000); // Adjust interval based on animation duration
+    const interval = setInterval(sequence, (wordsArray.length * 0.2 * 2 + 3) * 1000); // Adjust interval based on animation duration
 
     return () => clearInterval(interval);
   }, [scope, animate, wordsArray.length]);
