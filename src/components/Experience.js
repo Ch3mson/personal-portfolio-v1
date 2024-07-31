@@ -3,7 +3,7 @@ import { EXPERIENCES } from "@/constants"
 export function Experience() {
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-20 text-4xl">Experience</h1>
+            <h1 className="my-20 text-7xl text-center">Experience</h1>
             <div>
                 {EXPERIENCES.map((experience, index) => (
                     <div key={index} 

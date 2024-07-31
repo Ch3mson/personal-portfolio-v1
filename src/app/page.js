@@ -6,6 +6,7 @@ import { Technologies } from '@/components/Technologies'
 import { Experience } from '@/components/Experience';
 import { CardSection } from '@/components/CardSection'
 import { Projects } from '@/components/Projects';
+import { Footer } from '@/components/Footer';
 
 import Head from 'next/head';
 
@@ -23,10 +24,11 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        <Technologies />
+        {/* <Technologies /> */}
         <Experience />
         {/* <CardSection /> */}
         <Projects />
+        <Footer />
       </div>
     </div>
   );

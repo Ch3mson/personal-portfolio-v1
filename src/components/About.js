@@ -5,8 +5,8 @@ export function About() {
 
     return (
         <div className="flex items-center justify-start mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-screen">
-            <div className="py-24 max-w-7xl py-32">
-                <h1 className={`text-7xl inline-block`}>About.</h1>
+            <div className="max-w-7xl text-center">
+                <h1 className={`text-7xl inline-block`}>About</h1>
                 <p className="leading-7 mt-6 text-xl">
                     Hi! My name is Benson Yan and I am a student at The University of Waterloo, studying computer science with a specialization in Artificial Intelligence.
                     I am currently in my 2A term, taking Linear Algebra 2, Intro to Statistics, Object Oriented Programming, Logic and Computation, and Cognitive Processes.

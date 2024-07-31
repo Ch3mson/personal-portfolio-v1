@@ -17,8 +17,12 @@ export const PROJECTS = [
     {
         title: "Word Hunt Cheat",
         image: project1,
-        description: `A web application that processes a board from WOrd Hunt and generates all valid
+        description: `A web application that processes a board from Word Hunt and generates all valid
                      combinations for the user to achieve a maximum score`,
         technologies: ["React", "NextJS", "TailwindCSS", "Python", "Flask", "RestAPI"]
     }
 ]
+
+export const FOOTER = {
+    description: "Created and Designed by Benson Yan, 2024"
+}
